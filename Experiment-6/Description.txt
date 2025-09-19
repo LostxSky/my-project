@@ -1,0 +1,22 @@
+First, I started the code with <!DOCTYPE html> and the <html> tag so the browser knows this is an HTML page.
+Inside the <head> section, I gave the page a title using <title>Easy Draw</title>. This is the name that shows up on the browser tab.
+
+Then, I moved to the <body> section where I placed everything the user can see.
+I began with a heading <h2>SVG Drawing Tool</h2> so that the user knows this page is about drawing.
+
+Next, I added a dropdown menu using the <select> tag with three <option> values: Line, Box, and Free Hand. This allows the user to pick what kind of shape they want to draw.
+
+After that, I created a drawing area using <svg>. I gave it a width of 500, a height of 300, a black border, and a light gray background. This is like a canvas where the shapes will appear.
+
+Finally, I wrote a <script> for the drawing actions.
+Inside the script:
+
+I first got the <svg> board and the tool (dropdown) so I can use them in the code.
+
+When the mouse is pressed down (mousedown), the program checks what tool is selected and then creates that shape (a line, box, or freehand path) starting at the mouse position.
+
+When the mouse moves (mousemove), the shape keeps updating to follow the cursor so it grows as the user drags. For example, a line extends, a rectangle gets bigger, and freehand keeps adding points.
+
+When the mouse is released (mouseup), drawing stops.
+
+This way, the page lets the user draw different shapes on the board by clicking and dragging.
