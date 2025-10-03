@@ -1,0 +1,14 @@
+First, I started the code by writing <!DOCTYPE html> and the <html> tag so that the browser understands this is an HTML page.
+Then inside the head section, I gave my page a title using <title>Counter</title>, which is what appears on the browser tab. 
+After that, I moved to the body section where I placed everything the user can actually see.
+
+I began by adding a heading with <h2>Character Counter</h2> so that anyone opening the page knows what it is about. 
+Then I used a <textarea> tag to make a box where the user can type. I set rows="6" to make the box tall and cols="50" to make it wide. 
+I also used oninput="count()" so that every time the user types, a function will run automatically.
+
+After that, I added a line that shows the text "Characters:" and a number beside it using <span id="num">0</span>. 
+I started this number at 0 because before typing there are no characters.
+
+Finally, I wrote a script. In that script, I made a function called count(). 
+Inside the function, I first take whatever the user has typed in the box, then I count how many characters are there using .length. 
+After that, I show this number inside the <span> so that it keeps changing live as the user types or deletes text.

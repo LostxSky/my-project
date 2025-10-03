@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Product Filter</title>
+</head>
+<body>
+
+  <h2>My Products</h2>
+
+  <select id="filter" onchange="show()">
+    <option>All</option>
+    <option>Clothes</option>
+    <option>Shoes</option>
+    <option>Gadgets</option>
+  </select>
+
+  <ul>
+    <li class="Clothes">Shirt</li>
+    <li class="Clothes">Jacket</li>
+    <li class="Shoes">Sneakers</li>
+    <li class="Shoes">Sandals</li>
+    <li class="Gadgets">Phone</li>
+    <li class="Gadgets">Laptop</li>
+  </ul>
+
+  <script>
+    function show() {
+      let choice = document.getElementById("filter").value;
+      let items = document.querySelectorAll("li");
+      items.forEach(item => {
+        item.style.display = (choice=="All" || item.className==choice) ? "list-item" : "none";
+      });
+    }
+  </script>
+
+</body>
+</html>

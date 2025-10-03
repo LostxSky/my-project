@@ -1,0 +1,21 @@
+First, I started the code by writing <!DOCTYPE html> and the <html> tag so that the browser knows this is an HTML page.
+Then inside the <head> section, I gave my page a title using <title>Product Filter</title>, so on the browser tab it shows “Product Filter.”
+
+After that, I moved into the <body> where I put everything the user will see.
+I began with a heading <h2>My Products</h2> so that the page clearly shows what the list is about.
+
+Then I created a dropdown menu using <select id="filter" onchange="show()">.
+Inside it, I added different <option> tags like “All,” “Clothes,” “Shoes,” and “Gadgets.”
+This dropdown lets me pick which type of products I want to see.
+
+Below the dropdown, I made a product list using <ul>.
+Inside the list, I wrote different <li> items, such as “Shirt,” “Jacket,” “Sneakers,” “Sandals,” “Phone,” and “Laptop.”
+Each item has a class name like “Clothes,” “Shoes,” or “Gadgets,” so the code knows which category they belong to.
+
+Finally, I wrote a <script> where I made a function called show().
+Inside the function, I first checked which option was chosen in the dropdown using document.getElementById("filter").value.
+Then I collected all the <li> items using document.querySelectorAll("li").
+After that, I went through each item one by one using forEach.
+If the option is “All,” then all items are shown.
+But if I choose “Clothes,” then only the items with class “Clothes” are shown, and the others are hidden by changing their style.display.
+So whenever I pick something from the dropdown, the list instantly updates and only shows the products I asked for.

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Counter</title>
+</head>
+<body>
+  <h2>Character Counter</h2>
+  
+  <textarea id="box" rows="6" cols="50" oninput="count()"></textarea>
+  
+  <p>Characters: <span id="num">0</span></p>
+
+  <script>
+    function count() {
+      let t = document.getElementById("box").value;
+      document.getElementById("num").textContent = t.length;
+    }
+  </script>
+</body>
+</html>

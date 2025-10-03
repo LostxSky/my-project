@@ -1,0 +1,11 @@
+First, I started the code with <!DOCTYPE html> so that the browser knows I am using HTML5. 
+Then I opened the <html> tag to begin the webpage and used the <head> section to set the title as “Student Registration Form,” which will appear on the browser tab. 
+After that, I opened the <body> tag and wrote a main heading <h1> to display “Student Registration Form” at the top of the page. 
+Then I created a <form> so users can enter their details.
+Inside the form, I first added a name field using <input type="text"> with a placeholder to show “Enter your full name.” 
+I also used a pattern so that it only accepts letters and spaces, and I made it required so it can’t be left empty. 
+After that, I added an email field using <input type="email"> so that it only accepts a valid email format containing “@” and made it required as well. 
+Next, I added an age field using <input type="number"> with a minimum value of 12 and a maximum of 100, so users can only enter a valid age within this range.
+Finally, I added a submit button <button type="submit">Register</button> so when the user clicks it, the form data is sent for processing. 
+The browser will check all the rules I set, and if something is wrong, 
+it will show an error message before submitting.
